@@ -1,0 +1,540 @@
+<html>
+	<head>    
+		<title> McDonalds Sales</title>   
+		<center><h1>Affects of Veggie Burgers</h1></center>
+		<center><text>Data exploration to discover the affect of Burger King's Veggie Burgers</text></center>
+		<br></br>
+	</head>   
+	<body> 
+	<script src="https://code.highcharts.com/highcharts.js"></script>
+	<script src="https://code.highcharts.com/modules/exporting.js"></script>
+	<script src="https://code.highcharts.com/modules/export-data.js"></script>
+
+	<div id="chart-A" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+	<script> 
+	Highcharts.chart('chart-A', {
+    chart: {
+        type: 'line'
+    },
+    title: {
+        text: 'January Food Sales'
+    },
+    subtitle: {
+        text: 'Source: McDonalds'
+    },
+    xAxis: {
+        categories: ['1/1/2016', '1/2/2016', '1/3/2016', '1/4/2016', '1/5/2016', '1/6/2016', '1/7/2016', '1/8/2016', '1/9/2016', '1/10/2016', '1/11/2016', '1/12/2016', '1/13/2016', '1/14/2016', '1/15/2016', '1/16/2016', '1/17/2016', '1/18/2016', '1/18/2016', '1/20/2016', '1/21/2016', '1/22/2016', '1/23/2016', '1/24/2016', '1/25/2016', '1/26/2016', '1/27/2016', '1/28/2016', '1/29/2016', '1/30/2016', '1/31/2016']
+    },
+    yAxis: {
+        title: {
+            text: 'Sales'
+        }
+    },
+    plotOptions: {
+        line: {
+            dataLabels: {
+                enabled: true
+            },
+            enableMouseTracking: false
+        }
+    },
+    series: [{
+        name: 'French Fries',
+        data: [51540,
+41451,
+40602,
+42141,
+47568,
+47324,
+46973,
+53896,
+37087,
+40490,
+46512,
+42379,
+47133,
+46343,
+51287,
+41634,
+38401,
+45193,
+42500,
+44859,
+48784,
+53634,
+41246,
+39337,
+45160,
+44178,
+45506,
+51330,
+53477,
+39114,
+42581]
+    }, {
+        name: 'Hamburgers',
+        data: [185416,
+182961,
+178589,
+182018,
+182916,
+180302,
+178959,
+180267,
+180141,
+180780,
+183119,
+178567,
+182455,
+182749,
+182338,
+179219,
+180228,
+180964,
+178905,
+178139,
+180744,
+183768,
+179441,
+180422,
+179373,
+180979,
+184323,
+175417,
+177816,
+180070,
+177263]
+    },
+    {
+        name: 'Chicken Fillet',
+        data: [76915,
+72779,
+77157,
+76289,
+75062,
+75516,
+74938,
+72086,
+71568,
+77231,
+78995,
+77221,
+77581,
+74726,
+77453,
+76234,
+77928,
+74637,
+73338,
+74688,
+77204,
+78540,
+73812,
+74510,
+78254,
+76480,
+78012,
+76752,
+74502,
+74910,
+77353]
+    }]
+});
+
+	
+	</script>
+	<center><text>This chart displays the stability of sales throughout the month of January 2016.
+ </text></center>
+ <br> </br>
+	</body> 
+	<body>
+	<script src="https://code.highcharts.com/highcharts.js"></script>
+	<script src="https://code.highcharts.com/modules/exporting.js"></script>
+	<script src="https://code.highcharts.com/modules/export-data.js"></script>
+
+	<div id="chart-B" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+	<script>
+	Highcharts.chart('chart-B', {
+    chart: {
+        type: 'column'
+    },
+    title: {
+        text: 'Yearly Sales'
+    },
+    subtitle: {
+        text: 'Source: McDonalds'
+    },
+    xAxis: {
+        categories: [
+            '2016',
+            '2017',
+            '2018',
+         
+        ],
+        crosshair: true
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: 'Sales'
+        }
+    },
+    tooltip: {
+        headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+        pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+            '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+        footerFormat: '</table>',
+        shared: true,
+        useHTML: true
+    },
+    plotOptions: {
+        column: {
+            pointPadding: 0.2,
+            borderWidth: 0,
+            dataLabels: {
+            		enabled: true
+            }
+        },
+    },
+    series: [{
+        name: 'Hamburgers',
+        data: [73542892,85771123,92413593]
+
+    },
+    {
+        name: 'Chicken Filet',
+        data: [30603218,35711218,38604771]
+
+    
+    },
+    {
+        name: 'French Fries',
+        data: [18400035,21494968,23176100]
+
+    }]
+});
+	</script>
+	<center><text>This chart shows the growth in sales over 2016-2018. Even though Burger King released the veggie burger in October of 2018, 2018 still ended the year with the most sales in recent years.
+
+ </text></center>
+ <br> </br>
+	</body>
+	<body>
+	<script src="https://code.highcharts.com/highcharts.js"></script>
+	<script src="https://code.highcharts.com/modules/series-label.js"></script>
+	<script src="https://code.highcharts.com/modules/exporting.js"></script>
+	<script src="https://code.highcharts.com/modules/export-data.js"></script>
+
+	<div id="chart-C"></div>
+	<script>
+	#container {
+		min-width: 310px;
+		max-width: 800px;
+		height: 400px;
+		margin: 0 auto
+	}
+	</script>
+	<script>
+	Highcharts.chart('chart-C', {
+    chart: {
+        type: 'line'
+    },
+    title: {
+        text: 'Pre and Post BK Food Sales'
+    },
+    subtitle: {
+        text: 'Source: McDonalds'
+    },
+    xAxis: {
+        categories: ['April2018', 'May2018', 'Jun2018', 'Jul2018', 'Aug2018', 'Sep2018', 'Oct2018', 'Nov2018', 'Dec2018', 'Jan2019', 'Feb2019', 'Mar2019', 'April2019']
+    },
+    yAxis: {
+        title: {
+            text: 'Sales (USD)'
+        }
+    },
+    plotOptions: {
+        line: {
+            dataLabels: {
+                enabled: false
+            },
+            enableMouseTracking: true
+        }
+    },
+    series: [{
+        name: 'Total Sales',
+        data: [13251875,
+13687830,
+12840517,
+13338406,
+13542320,
+13247269,
+11374035,
+12299535,
+11539095,
+12558735,
+12278447,
+12074324,
+12250084]
+    }]
+});
+	</script>
+	<center><text>This chart shows a drop in sales when Burger King released the veggie burger but it is a small sample size.
+
+
+ </text></center>
+ <br> </br>
+	</body>
+	<body>
+	<script src="https://code.highcharts.com/highcharts.js"></script>
+	<script src="https://code.highcharts.com/modules/series-label.js"></script>
+	<script src="https://code.highcharts.com/modules/exporting.js"></script>
+	<script src="https://code.highcharts.com/modules/export-data.js"></script>
+
+
+
+
+	<script>
+	#container {
+		min-width: 310px;
+		max-width: 800px;
+		height: 400px;
+		margin: 0 auto
+	}
+	</script>
+	<div id="chart-D"></div>
+	<script>
+	Highcharts.chart('chart-D', {
+    chart: {
+        type: 'line'
+    },
+    title: {
+        text: 'Sept-January Sales for 2016-2019'
+    },
+    subtitle: {
+        text: 'Source: McDonalds'
+    },
+    xAxis: {
+        categories: ['Q1', 'Q2', 'Q3']
+    },
+    yAxis: {
+        title: {
+            text: 'Sales (USD)'
+        }
+    },
+    plotOptions: {
+        line: {
+            dataLabels: {
+                enabled: false
+            },
+            enableMouseTracking: true
+        }
+    },
+    series: [{
+        name: 'Total Sales',
+        data: [53820886,62607359,61018669]
+    }]
+});
+	
+	
+	</script>
+	<center><text> This chart compares the sales of McDonalds over the past years during the time period September to January. The chart implies that the veggie burgers might have affected sales slightly but sales are still a lot better than the year 2016
+ </text></center>
+	</body>
+	<body>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="https://code.highcharts.com/highcharts.js"></script>
+	<script src="https://code.highcharts.com/modules/exporting.js"></script>
+	<script src="https://code.highcharts.com/modules/export-data.js"></script>
+
+	<div id="chart-F" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+	<script>
+	Highcharts.chart('chart-F', {
+    chart: {
+        plotBackgroundColor: null,
+        plotBorderWidth: null,
+        plotShadow: false,
+        type: 'pie'
+    },
+    title: {
+        text: 'Sales from Aug 2018- Jan2019'
+    },
+    tooltip: {
+        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+    },
+    plotOptions: {
+        pie: {
+            allowPointSelect: true,
+            cursor: 'pointer',
+            dataLabels: {
+                enabled: true
+            },
+            showInLegend: true
+        }
+    },
+    series: [{
+        name: 'Brands',
+        colorByPoint: true,
+        data: [{
+            name: 'North East',
+            y: 15355661,
+            sliced: true,
+            selected: true
+        }, {
+            name: 'South West',
+            y: 15138259
+        },  {
+            name: 'North West',
+            y: 14927539
+        }, {
+            name: 'South East',
+            y: 14650395
+        }, {
+            name: 'Center',
+            y: 14489135
+        }]
+    }]
+});
+	</script>
+	<center><text>  This chart shows that sales are evenly distributed over the regions from August 2018 to January 2019 
+ </text></center>
+ <br> </br>
+	</body>
+	<body>
+	<script src="https://code.highcharts.com/highcharts.js"></script>
+	<script src="https://code.highcharts.com/modules/exporting.js"></script>
+	<script src="https://code.highcharts.com/modules/export-data.js"></script>
+
+	<div id="chart-E" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+	<script>
+	Highcharts.chart('chart-E', {
+  chart: {
+    type: 'column'
+  },
+  title: {
+    text: 'McDonalds Sales'
+  },
+  subtitle: {
+    text: 'Source: McDonalds'
+  },
+  xAxis: {
+    categories: [
+      'Aug-18',
+      'Sep-18',
+      'Oct-18',
+      'Nov-18',
+      'Dec-18',
+      'Jan-19'
+    ],
+    crosshair: true
+  },
+  yAxis: {
+    min: 0,
+    title: {
+      text: 'Sales (USD)'
+    }
+  },
+  tooltip: {
+    headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+    pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+      '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+    footerFormat: '</table>',
+    shared: true,
+    useHTML: true
+  },
+  plotOptions: {
+    column: {
+      pointPadding: 0.2,
+      borderWidth: 0,
+      enableMouseTracking: true
+      
+    }
+  },
+  series: [{
+      name: 'North East',
+      data: [2786194,
+        2720638,
+        2320956,
+        2560458,
+        2373509,
+        2593906
+      ]
+
+    }, {
+      name: 'South West',
+      data: [2736147,
+        2710087,
+        2288687,
+        2526092,
+        2352366,
+        2524880
+      ]
+
+    }, {
+      name: 'North West',
+      data: [2754238,
+        2670893,
+        2288925,
+        2416298,
+        2239571,
+        2557614
+      ]
+
+    }, {
+      name: 'South East',
+      data: [2666406,
+        2586340,
+        2223673,
+        2376833,
+        2306116,
+        2491027
+      ]
+
+    },
+    {
+      name: 'Central',
+      data: [2599335,
+        2559311,
+        2251794,
+        2419854,
+        2267533,
+        2391308
+      ]
+
+    }
+  ]
+});
+
+	
+	</script>
+	<center><text> This shows a slight decrease in sales after Burger King released the veggie burger. All regions showed a major decrease in sales right after the release of the burger but saw a bounce back afterwards.
+
+
+ </text></center>
+ <br> </br>
+ <br> </br>
+ <br></br>
+<center> <h1>Conclusion </h1></center>
+<center><text>The data shows an initial major drop in sales when Burger King first released the burger but sales naturally increased the months following. The sales of 2018 was still the highest despite the release of the veggie burger in the later half of the year. Even though there was an initial drop in sales due to the release of the veggie burger it does not seem to have a major lasting effect. 
+</text></center>
+<br> </br>
+<br> </br>
+<center> <h1>Methodology </h1></center>
+<center><text>To create these charts I used Google Sheets to calculate the data and then used Highcharts to create the graphs. I used Google Sheets to easily create sums and groupings so that we can analyze the specific time periods. After that I used Highcharts outlined javascript, css, and html to create the charts so they can be interactive and beautiful. For the pdf I copied and pasted the charts over and for the website I created it using visual studio code. Online the charts are interactive and I used the school domain to create the website.</text></center>
+<br> </br>
+<br> </br>
+<center> <h1>Pitfalls </h1></center>
+<center><text>Our team wasn't able to analyze the long term effects of the Veggie Burger. We do not know if the sales decreased the following year due to the Veggie Burger. We also do not know if the decrease in sales following the release of the Veggie Burger was the sole cause of the decrease in sales. There could have been many other factors to the decrease in sales. We also do not know why sales increased so much from the year 2016. The increase in sales these past two years might have been out of the ordinary and that the sales might have just been returning to normal after a while. We also could not see a specific trend in the regional data. As a result our major pitfalls is unable to isolate the effect of the Veggie Burger and also see the long term effect of it due.
+ </text></center>
+<br> </br>
+<br> </br>
+<center> <h1>Success </h1></center>
+<center><text>The data visualization showed that there could be a correlation between the release of the veggie burger and a decrease in overall sales. We do not know if there were other factors involved but the data points in that direction. The data visualization also showed that there might just be a trend in overall decrease in sales over the last few months of the year. The eventually rebounded after a few months of the release of the Veggie Burger so it seems like it did not affect sales long term and only decrease sales momentary. The charts also showed an evenly distributed amount in sales between all the regions and a similar trend in all of them. As a result the charts potential showed an initial drop in sales due to the Veggie Burger but it does not seem like the release of the Veggie Burger had a long term effect.      </text></center>
+	
+	</body>
+	
+</html> 
+ 
