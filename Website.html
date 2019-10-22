@@ -281,12 +281,98 @@
     }]
 });
 	</script>
-	<center><text>This chart shows a drop in sales when Burger King released the veggie burger but it is a small sample size.
+ <br> </br>
+	</body>
+	
+	
+	
+	<br> </br>
+	<body>
+	<script src="https://code.highcharts.com/highcharts.js"></script>
+	<script src="https://code.highcharts.com/modules/series-label.js"></script>
+	<script src="https://code.highcharts.com/modules/exporting.js"></script>
+	<script src="https://code.highcharts.com/modules/export-data.js"></script>
+
+	<div id="chart-C"></div>
+	<script>
+	#container {
+		min-width: 310px;
+		max-width: 800px;
+		height: 400px;
+		margin: 0 auto
+	}
+	</script>
+	<script>
+	Highcharts.chart('chart-C', {
+    chart: {
+        type: 'line'
+    },
+    title: {
+        text: 'Pre and Post BK Food Sales'
+    },
+    subtitle: {
+        text: 'Source: McDonalds'
+    },
+    xAxis: {
+        categories: [ 'Sep2018', 'Oct2018', 'Nov2018']
+    },
+    yAxis: {
+        title: {
+            text: 'Sales (USD)'
+        }
+    },
+    plotOptions: {
+        line: {
+            dataLabels: {
+                enabled: false
+            },
+            enableMouseTracking: true
+        }
+    },
+    series: [{
+        name: 'Total Sales',
+        data: [
+13247269,
+11374035,
+12299535]
+    }]
+});
+	</script>
+	<center><text>This chart shows a drop in sales when Burger King released the veggie burger on the micro scale.
 
 
  </text></center>
  <br> </br>
-	</body>
+ </body>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	<body>
 	<script src="https://code.highcharts.com/highcharts.js"></script>
 	<script src="https://code.highcharts.com/modules/series-label.js"></script>
@@ -317,7 +403,7 @@
         text: 'Source: McDonalds'
     },
     xAxis: {
-        categories: ['Q1', 'Q2', 'Q3']
+        categories: ['Sept-Jan/2016', 'Sept-Jan/2017', 'Sept-Jan/2018']
     },
     yAxis: {
         title: {
